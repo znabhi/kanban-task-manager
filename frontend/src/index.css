@@ -1,0 +1,79 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   index.css — Global reset & design tokens
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* ── CSS Custom Properties ───────────────────────────────────────────────── */
+:root {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Background */
+  --bg-base:    #0d1117;
+  --bg-surface: #161b22;
+  --bg-card:    #1c2433;
+  --bg-input:   #1c2433;
+  --bg-hover:   #21292f;
+
+  /* Brand */
+  --indigo-400: #818cf8;
+  --indigo-500: #6366f1;
+  --indigo-600: #4f46e5;
+  --emerald-400: #34d399;
+  --emerald-500: #10b981;
+  --rose-400:   #f87171;
+  --rose-500:   #ef4444;
+  --amber-400:  #fbbf24;
+
+  /* Text */
+  --text-primary:   #e6edf3;
+  --text-secondary: #8b949e;
+  --text-muted:     #484f58;
+
+  /* Border */
+  --border-subtle:  #21262d;
+  --border-default: #30363d;
+  --border-muted:   #484f58;
+
+  /* Column accent */
+  --todo-accent:  #6366f1;
+  --done-accent:  #10b981;
+
+  /* Shadow */
+  --shadow-sm:  0 1px 3px rgba(0,0,0,.3);
+  --shadow-md:  0 4px 16px rgba(0,0,0,.4);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,.5);
+  --glow-indigo: 0 0 20px rgba(99,102,241,.15);
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* Timing */
+  --transition: 200ms ease;
+  --transition-slow: 350ms ease;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+button { font-family: inherit; cursor: pointer; border: none; background: none; }
+input  { font-family: inherit; }
+a { color: inherit; text-decoration: none; }
+img, svg { display: block; }

@@ -1,0 +1,14 @@
+{
+  "name": "kanban-task-manager",
+  "version": "1.0.0",
+  "description": "Mini Kanban Task Manager — React + Node.js/Express (single deployment)",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "node backend/server.js",
+    "dev:backend": "node backend/server.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["kanban", "react", "express", "task-manager"],
+  "license": "ISC"
+}
